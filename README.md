@@ -24,22 +24,12 @@ Patches to build and load VMware Workstation 17.6.1 kernel modules (`vmmon` and 
 ## Applying the Patches
 
 ```bash
-# Extract VMware module sources
-mkdir -p /tmp/vmware-fix/vmmon /tmp/vmware-fix/vmnet
-tar xf /usr/lib/vmware/modules/source/vmmon.tar -C /tmp/vmware-fix/vmmon
-tar xf /usr/lib/vmware/modules/source/vmnet.tar -C /tmp/vmware-fix/vmnet
-
-# Apply patches
-cd /tmp/vmware-fix
-for p in /path/to/patches/*.patch; do patch -p1 < "$p"; done
-
-# Repack (without build artifacts)
-sudo tar cf /usr/lib/vmware/modules/source/vmmon.tar -C /tmp/vmware-fix/vmmon vmmon-only/
-sudo tar cf /usr/lib/vmware/modules/source/vmnet.tar -C /tmp/vmware-fix/vmnet vmnet-only/
-
-# Build and install
-sudo vmware-modconfig --console --install-all
+git clone https://github.com/andrewak54/ClaudeVmware
+cd ClaudeVmware
+sudo bash apply-patches.sh
 ```
+
+The script extracts the VMware source tarballs, applies all patches, repacks them, and runs `vmware-modconfig --console --install-all`.
 
 ## After a Kernel Update
 
