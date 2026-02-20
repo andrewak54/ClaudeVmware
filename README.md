@@ -21,6 +21,10 @@ Patches to build and load VMware Workstation 17.6.1 kernel modules (`vmmon` and 
 | [0004](patches/0004-vmmon-objtool-exclude-non-standard-flow-files.patch) | `vmmon-only/Makefile.kernel` | Exclude `phystrack.o` and `task.o` from objtool — VMware's `Panic()` isn't on objtool's noreturn whitelist; `Task_Switch()` uses non-standard crosspage assembly |
 | [0005](patches/0005-vmnet-userif-fix-UACCESS-csum_partial_copy_nocheck.patch) | `vmnet-only/userif.c` | Replace `user_access_begin()` + `csum_partial_copy_nocheck()` with `csum_partial()` + `copy_to_user()` — kernel 6.17 objtool rejects the former pattern |
 
+## Compatibility
+
+See [status.md](status.md) for tested kernel/OS combinations.
+
 ## Applying the Patches
 
 ```bash
