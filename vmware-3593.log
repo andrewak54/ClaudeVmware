@@ -1,0 +1,285 @@
+2026-02-20T03:29:23.560Z In(05) host-3593 Log for VMware Workstation pid=3593 version=17.6.1 build=build-24319023 option=Release
+2026-02-20T03:29:23.560Z In(05) host-3593 The host is x86_64.
+2026-02-20T03:29:23.560Z In(05) host-3593 Host codepage=UTF-8 encoding=UTF-8
+2026-02-20T03:29:23.560Z In(05) host-3593 Host is Linux 6.17.0-14-generic Ubuntu 24.04.3 LTS Ubuntu 24.04 24.04.3 LTS (Noble Numbat)
+2026-02-20T03:29:23.560Z In(05) host-3593 Host offset from UTC is +07:00.
+2026-02-20T03:29:23.559Z In(05) host-3593 DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+2026-02-20T03:29:23.559Z In(05) host-3593 [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+2026-02-20T03:29:23.559Z In(05) host-3593 PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+2026-02-20T03:29:23.559Z In(05) host-3593 DictionaryLoad: Cannot open file "/home/aakulov/.vmware/config": No such file or directory.
+2026-02-20T03:29:23.559Z In(05) host-3593 [msg.dictionary.load.openFailed] Cannot open file "/home/aakulov/.vmware/config": No such file or directory.
+2026-02-20T03:29:23.559Z In(05) host-3593 PREF Optional preferences file not found at /home/aakulov/.vmware/config. Using default values.
+2026-02-20T03:29:23.583Z Wa(03) host-3593 Logging to /tmp/vmware-aakulov/vmware-3593.log
+2026-02-20T03:29:23.590Z In(05) host-3593 Obtaining info using the running kernel.
+2026-02-20T03:29:23.590Z In(05) host-3593 Created new pathsHash.
+2026-02-20T03:29:23.590Z In(05) host-3593 Setting header path for 6.17.0-14-generic to "/lib/modules/6.17.0-14-generic/build/include".
+2026-02-20T03:29:23.590Z In(05) host-3593 Validating path "/lib/modules/6.17.0-14-generic/build/include" for kernel release "6.17.0-14-generic".
+2026-02-20T03:29:23.592Z In(05) host-3593 Failed to find /lib/modules/6.17.0-14-generic/build/include/linux/version.h
+2026-02-20T03:29:23.592Z In(05) host-3593 /lib/modules/6.17.0-14-generic/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2026-02-20T03:29:23.593Z In(05) host-3593 using /usr/bin/gcc-13 for preprocess check
+2026-02-20T03:29:23.601Z In(05) host-3593 Preprocessed UTS_RELEASE, got value "6.17.0-14-generic".
+2026-02-20T03:29:23.601Z In(05) host-3593 The header path "/lib/modules/6.17.0-14-generic/build/include" for the kernel "6.17.0-14-generic" is valid.  Whoohoo!
+2026-02-20T03:29:23.858Z In(05) host-3593 found symbol version file /lib/modules/6.17.0-14-generic/build/Module.symvers
+2026-02-20T03:29:23.858Z In(05) host-3593 Reading symbol versions from /lib/modules/6.17.0-14-generic/build/Module.symvers.
+2026-02-20T03:29:23.891Z In(05) host-3593 Read 32880 symbol versions
+2026-02-20T03:29:23.892Z In(05) host-3593 Reading in info for the vmmon module.
+2026-02-20T03:29:23.892Z In(05) host-3593 Reading in info for the vmnet module.
+2026-02-20T03:29:23.892Z In(05) host-3593 Invoking modinfo on "vmmon".
+2026-02-20T03:29:23.896Z In(05) host-3593 "/sbin/modinfo" exited with status 256.
+2026-02-20T03:29:23.897Z In(05) host-3593 Invoking modinfo on "vmnet".
+2026-02-20T03:29:23.901Z In(05) host-3593 "/sbin/modinfo" exited with status 256.
+2026-02-20T03:29:23.914Z In(05) host-3593 to be installed: vmmon status: 0
+2026-02-20T03:29:23.914Z In(05) host-3593 to be installed: vmnet status: 0
+2026-02-20T03:29:23.926Z In(05) host-3593 Obtaining info using the running kernel.
+2026-02-20T03:29:23.926Z In(05) host-3593 Setting header path for 6.17.0-14-generic to "/lib/modules/6.17.0-14-generic/build/include".
+2026-02-20T03:29:23.926Z In(05) host-3593 Validating path "/lib/modules/6.17.0-14-generic/build/include" for kernel release "6.17.0-14-generic".
+2026-02-20T03:29:23.926Z In(05) host-3593 Failed to find /lib/modules/6.17.0-14-generic/build/include/linux/version.h
+2026-02-20T03:29:23.926Z In(05) host-3593 /lib/modules/6.17.0-14-generic/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2026-02-20T03:29:23.926Z In(05) host-3593 using /usr/bin/gcc-13 for preprocess check
+2026-02-20T03:29:23.933Z In(05) host-3593 Preprocessed UTS_RELEASE, got value "6.17.0-14-generic".
+2026-02-20T03:29:23.933Z In(05) host-3593 The header path "/lib/modules/6.17.0-14-generic/build/include" for the kernel "6.17.0-14-generic" is valid.  Whoohoo!
+2026-02-20T03:29:24.188Z In(05) host-3593 found symbol version file /lib/modules/6.17.0-14-generic/build/Module.symvers
+2026-02-20T03:29:24.188Z In(05) host-3593 Reading symbol versions from /lib/modules/6.17.0-14-generic/build/Module.symvers.
+2026-02-20T03:29:24.219Z In(05) host-3593 Read 32880 symbol versions
+2026-02-20T03:29:24.222Z In(05) host-3593 Kernel header path retrieved from FileEntry: /lib/modules/6.17.0-14-generic/build/include
+2026-02-20T03:29:24.222Z In(05) host-3593 Update kernel header path to /lib/modules/6.17.0-14-generic/build/include
+2026-02-20T03:29:24.222Z In(05) host-3593 Validating path "/lib/modules/6.17.0-14-generic/build/include" for kernel release "6.17.0-14-generic".
+2026-02-20T03:29:24.222Z In(05) host-3593 Failed to find /lib/modules/6.17.0-14-generic/build/include/linux/version.h
+2026-02-20T03:29:24.222Z In(05) host-3593 /lib/modules/6.17.0-14-generic/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2026-02-20T03:29:24.222Z In(05) host-3593 using /usr/bin/gcc-13 for preprocess check
+2026-02-20T03:29:24.232Z In(05) host-3593 Preprocessed UTS_RELEASE, got value "6.17.0-14-generic".
+2026-02-20T03:29:24.232Z In(05) host-3593 The header path "/lib/modules/6.17.0-14-generic/build/include" for the kernel "6.17.0-14-generic" is valid.  Whoohoo!
+2026-02-20T03:29:24.233Z In(05) host-3593 Found compiler at "/usr/bin/gcc"
+2026-02-20T03:29:24.234Z In(05) host-3593 Got gcc version "13".
+2026-02-20T03:29:24.234Z In(05) host-3593 The GCC version matches the kernel GCC minor version like a glove.
+2026-02-20T03:29:24.236Z In(05) host-3593 Got gcc version "13".
+2026-02-20T03:29:24.236Z In(05) host-3593 The GCC version matches the kernel GCC minor version like a glove.
+2026-02-20T03:29:24.237Z In(05) host-3593 Trying to find a suitable PBM set for kernel "6.17.0-14-generic".
+2026-02-20T03:29:24.237Z In(05) host-3593 No matching PBM set was found for kernel "6.17.0-14-generic".
+2026-02-20T03:29:24.237Z In(05) host-3593 The GCC version matches the kernel GCC minor version like a glove.
+2026-02-20T03:29:24.237Z In(05) host-3593 Validating path "/lib/modules/6.17.0-14-generic/build/include" for kernel release "6.17.0-14-generic".
+2026-02-20T03:29:24.237Z In(05) host-3593 Failed to find /lib/modules/6.17.0-14-generic/build/include/linux/version.h
+2026-02-20T03:29:24.237Z In(05) host-3593 /lib/modules/6.17.0-14-generic/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2026-02-20T03:29:24.237Z In(05) host-3593 using /usr/bin/gcc-13 for preprocess check
+2026-02-20T03:29:24.243Z In(05) host-3593 Preprocessed UTS_RELEASE, got value "6.17.0-14-generic".
+2026-02-20T03:29:24.243Z In(05) host-3593 The header path "/lib/modules/6.17.0-14-generic/build/include" for the kernel "6.17.0-14-generic" is valid.  Whoohoo!
+2026-02-20T03:29:28.185Z In(05) host-3593 The GCC version matches the kernel GCC minor version like a glove.
+2026-02-20T03:29:28.185Z In(05) host-3593 Validating path "/lib/modules/6.17.0-14-generic/build/include" for kernel release "6.17.0-14-generic".
+2026-02-20T03:29:28.185Z In(05) host-3593 Failed to find /lib/modules/6.17.0-14-generic/build/include/linux/version.h
+2026-02-20T03:29:28.185Z In(05) host-3593 /lib/modules/6.17.0-14-generic/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2026-02-20T03:29:28.185Z In(05) host-3593 using /usr/bin/gcc-13 for preprocess check
+2026-02-20T03:29:28.192Z In(05) host-3593 Preprocessed UTS_RELEASE, got value "6.17.0-14-generic".
+2026-02-20T03:29:28.192Z In(05) host-3593 The header path "/lib/modules/6.17.0-14-generic/build/include" for the kernel "6.17.0-14-generic" is valid.  Whoohoo!
+2026-02-20T03:29:28.192Z In(05) host-3593 Using temp dir "/tmp".
+2026-02-20T03:29:35.168Z In(05) host-3593 Stopping VMware services:
+2026-02-20T03:29:35.168Z In(05) host-3593    VMware Authentication Daemon[71G done
+2026-02-20T03:29:35.168Z In(05) host-3593    Virtual machine monitor[71G done
+2026-02-20T03:29:35.168Z In(05) host-3593 make: Entering directory '/tmp/modconfig-bDQtRk/vmmon-only'
+2026-02-20T03:29:35.168Z In(05) host-3593 /usr/bin/make -C /lib/modules/6.17.0-14-generic/build/include/.. M=$PWD SRCROOT=$PWD/. \
+2026-02-20T03:29:35.168Z In(05) host-3593   MODULEBUILDDIR= modules
+2026-02-20T03:29:35.168Z In(05) host-3593 make[1]: Entering directory '/usr/src/linux-headers-6.17.0-14-generic'
+2026-02-20T03:29:35.168Z In(05) host-3593 make[2]: Entering directory '/tmp/modconfig-bDQtRk/vmmon-only'
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  linux/driver.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  linux/driverLog.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  linux/hostif.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/apic.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/comport.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/cpuid.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/crosspage.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/memtrack.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/moduleloop.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/phystrack.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/sharedAreaVmmon.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  common/statVarsVmmon.o
+2026-02-20T03:29:35.168Z In(05) host-3593 make[2]: Leaving directory '/tmp/modconfig-bDQtRk/vmmon-only'
+2026-02-20T03:29:35.168Z In(05) host-3593 make[1]: Leaving directory '/usr/src/linux-headers-6.17.0-14-generic'
+2026-02-20T03:29:35.168Z In(05) host-3593 make: Leaving directory '/tmp/modconfig-bDQtRk/vmmon-only'
+2026-02-20T03:29:35.168Z In(05) host-3593 make: Entering directory '/tmp/modconfig-bDQtRk/vmnet-only'
+2026-02-20T03:29:35.168Z In(05) host-3593 /usr/bin/make -C /lib/modules/6.17.0-14-generic/build/include/.. M=$PWD SRCROOT=$PWD/. \
+2026-02-20T03:29:35.168Z In(05) host-3593   MODULEBUILDDIR= modules
+2026-02-20T03:29:35.168Z In(05) host-3593 make[1]: Entering directory '/usr/src/linux-headers-6.17.0-14-generic'
+2026-02-20T03:29:35.168Z In(05) host-3593 make[2]: Entering directory '/tmp/modconfig-bDQtRk/vmnet-only'
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  driver.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  hub.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  userif.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  netif.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  bridge.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  procfs.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  smac_compat.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  smac.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  vnetEvent.o
+2026-02-20T03:29:35.168Z In(05) host-3593   CC [M]  vnetUserListener.o
+2026-02-20T03:29:35.168Z In(05) host-3593 make[2]: Leaving directory '/tmp/modconfig-bDQtRk/vmnet-only'
+2026-02-20T03:29:35.168Z In(05) host-3593 make[1]: Leaving directory '/usr/src/linux-headers-6.17.0-14-generic'
+2026-02-20T03:29:35.168Z In(05) host-3593 make: Leaving directory '/tmp/modconfig-bDQtRk/vmnet-only'
+2026-02-20T03:29:35.168Z In(05) host-3593 [AppLoader] Use shipped Linux kernel AIO access library.
+2026-02-20T03:29:35.168Z In(05) host-3593 An up-to-date "libaio" or "libaio1" package from your system is preferred.
+2026-02-20T03:29:35.168Z In(05) host-3593 [AppLoader] GLib does not have GSettings support.
+2026-02-20T03:29:35.168Z In(05) host-3593 Using kernel build system.
+2026-02-20T03:29:35.168Z In(05) host-3593 warning: the compiler differs from the one used to build the kernel
+2026-02-20T03:29:35.168Z In(05) host-3593   The kernel was built by: x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+2026-02-20T03:29:35.168Z In(05) host-3593   You are using:           gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+2026-02-20T03:29:35.168Z In(05) host-3593 linux/driverLog.c:26:10: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    26 | #include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |          ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 common/apic.c:20:10: fatal error: vm_basic_defs.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    20 | #include "vm_basic_defs.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |          ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 linux/driver.c:21:10: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    21 | #include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |          ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 linux/hostif.c:30:10: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    30 | #include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |          ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 In file included from common/comport.c:40:
+2026-02-20T03:29:35.168Z In(05) host-3593 common/comport.h:25:10: fatal error: includeCheck.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    25 | #include "includeCheck.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |          ^~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 common/cpuid.c:22:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    22 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 common/crosspage.c:50:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    50 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: linux/driver.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** Waiting for unfinished jobs....
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: linux/driverLog.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: linux/hostif.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/apic.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/comport.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/cpuid.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/crosspage.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 common/memtrack.c:79:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    79 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 common/moduleloop.c:30:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    30 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 common/phystrack.c:38:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    38 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/moduleloop.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 common/sharedAreaVmmon.c:27:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    27 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/memtrack.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/phystrack.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/sharedAreaVmmon.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 common/statVarsVmmon.c:27:13: fatal error: driver-config.h: No such file or directory
+2026-02-20T03:29:35.168Z In(05) host-3593    27 | #   include "driver-config.h"
+2026-02-20T03:29:35.168Z In(05) host-3593       |             ^~~~~~~~~~~~~~~~~
+2026-02-20T03:29:35.168Z In(05) host-3593 compilation terminated.
+2026-02-20T03:29:35.168Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: common/statVarsVmmon.o] Error 1
+2026-02-20T03:29:35.168Z In(05) host-3593 make[3]: *** [/usr/src/linux-headers-6.17.0-14-generic/Makefile:2016: .] Error 2
+2026-02-20T03:29:35.168Z In(05) host-3593 make[2]: *** [/usr/src/linux-headers-6.17.0-14-generic/Makefile:248: __sub-make] Error 2
+2026-02-20T03:29:35.168Z In(05) host-3593 make[1]: *** [Makefile:248: __sub-make] Error 2
+2026-02-20T03:29:35.168Z In(05) host-3593 make: *** [Makefile:117: vmmon.ko] Error 2
+2026-02-20T03:29:35.168Z In(05) host-3593 Using kernel build system.
+2026-02-20T03:29:35.168Z In(05) host-3593 warning: the compiler differs from the one used to build the kernel
+2026-02-20T03:29:35.168Z In(05) host-3593   The kernel was built by: x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+2026-02-20T03:29:35.168Z In(05) host-3593   You are using:           gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+2026-02-20T03:29:35.168Z In(05) host-3593 In file included from vnetUserListener.c:39:
+2026-02-20T03:29:35.168Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.168Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.168Z In(05) host-3593       | 
+2026-02-20T03:29:35.168Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/jiffies.h:8,
+2026-02-20T03:29:35.168Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/ktime.h:25,
+2026-02-20T03:29:35.168Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/timer.h:6,
+2026-02-20T03:29:35.168Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/netdevice.h:24,
+2026-02-20T03:29:35.168Z In(05) host-3593                  from vnetUserListener.c:33:
+2026-02-20T03:29:35.168Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.168Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from userif.c:47:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/cpumask.h:11,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/arch/x86/include/asm/paravirt.h:21,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/arch/x86/include/asm/irqflags.h:102,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/irqflags.h:18,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/spinlock.h:59,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/wait.h:9,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/wait_bit.h:8,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/fs.h:7,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from /usr/src/linux-headers-6.17.0-14-generic/include/linux/highmem.h:5,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from userif.c:27:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from smac_compat.c:53:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from smac_compat.c:33:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from driver.c:49:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from driver.c:24:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from netif.c:43:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from netif.c:23:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from procfs.c:43:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from procfs.c:23:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from hub.c:43:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from hub.c:23:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 userif.o: error: objtool: VNetCsumAndCopyToUser+0x31: call to csum_partial_copy_nocheck() with UACCESS enabled
+2026-02-20T03:29:35.169Z In(05) host-3593 make[4]: *** [/usr/src/linux-headers-6.17.0-14-generic/scripts/Makefile.build:287: userif.o] Error 1
+2026-02-20T03:29:35.169Z In(05) host-3593 make[4]: *** Deleting file 'userif.o'
+2026-02-20T03:29:35.169Z In(05) host-3593 make[4]: *** Waiting for unfinished jobs....
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from bridge.c:58:
+2026-02-20T03:29:35.169Z In(05) host-3593 vnetInt.h:50: warning: "MAX" redefined
+2026-02-20T03:29:35.169Z In(05) host-3593    50 | #define MAX(_a, _b)   (((_a) > (_b)) ? (_a) : (_b))
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 In file included from /usr/src/linux-headers-6.17.0-14-generic/include/linux/kernel.h:28,
+2026-02-20T03:29:35.169Z In(05) host-3593                  from bridge.c:24:
+2026-02-20T03:29:35.169Z In(05) host-3593 /usr/src/linux-headers-6.17.0-14-generic/include/linux/minmax.h:315: note: this is the location of the previous definition
+2026-02-20T03:29:35.169Z In(05) host-3593   315 | #define MAX(a, b) __cmp(max, a, b)
+2026-02-20T03:29:35.169Z In(05) host-3593       | 
+2026-02-20T03:29:35.169Z In(05) host-3593 make[3]: *** [/usr/src/linux-headers-6.17.0-14-generic/Makefile:2016: .] Error 2
+2026-02-20T03:29:35.169Z In(05) host-3593 make[2]: *** [/usr/src/linux-headers-6.17.0-14-generic/Makefile:248: __sub-make] Error 2
+2026-02-20T03:29:35.169Z In(05) host-3593 make[1]: *** [Makefile:248: __sub-make] Error 2
+2026-02-20T03:29:35.169Z In(05) host-3593 make: *** [Makefile:117: vmnet.ko] Error 2
+2026-02-20T03:29:35.169Z In(05) host-3593 Unable to install all modules.  See log for details.
+2026-02-20T03:29:35.169Z In(05) host-3593 
