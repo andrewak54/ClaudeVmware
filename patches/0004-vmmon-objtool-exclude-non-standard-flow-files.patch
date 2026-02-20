@@ -1,0 +1,35 @@
+From: VMware kernel 6.17 compatibility patches
+Subject: [PATCH 4/5] vmmon: exclude phystrack.o and task.o from objtool
+
+Two files fail objtool validation in kernel 6.17:
+
+  common/phystrack.o: error: objtool: PhysTrack_Add() falls through to
+    next function PhysTrack_Remove()
+
+  common/task.o: error: objtool: Task_Switch(): unexpected end of section
+    .text
+
+phystrack.c: VMware's Panic() (called via VERIFY macro) is not on
+objtool's noreturn function whitelist, so objtool incorrectly believes
+control can fall through past VERIFY() into the next function.
+
+task.c: Task_Switch() uses VMware's crosspage world-switch mechanism,
+which involves non-standard assembly control flow that objtool cannot
+statically analyze.
+
+The fix is to exclude these two files from objtool validation using the
+OBJECT_FILES_NON_STANDARD_<target-stem>.o mechanism. Note that
+target-stem in kernel 6.17 includes the subdirectory prefix
+(common/phystrack, not just phystrack).
+
+Applies to: vmmon-only/Makefile.kernel
+---
+--- a/vmmon-only/Makefile.kernel
++++ b/vmmon-only/Makefile.kernel
+@@ -34,3 +34,7 @@ clean:
+ 		$(foreach dir,linux/ common/ bootstrap/ \
+ 		./,$(addprefix $(dir),.*.cmd .*.o.flags *.o)))
++
++# Exclude files with non-standard control flow from objtool analysis
++OBJECT_FILES_NON_STANDARD_common/phystrack.o := y
++OBJECT_FILES_NON_STANDARD_common/task.o := y

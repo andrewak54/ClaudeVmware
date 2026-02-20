@@ -1,0 +1,35 @@
+From: VMware kernel 6.17 compatibility patches
+Subject: [PATCH 1/5] vmmon,vmnet: fix BUILD_DIR detection in kbuild context
+
+In kernel 6.17, when the VMware Makefile is processed by kbuild as an
+external module, LINUXINCLUDE is already set to a multi-flag string like
+"-I/usr/src/linux-headers-.../arch/x86/include -I...". The Makefile
+derived BUILD_DIR from HEADER_DIR (which was set to LINUXINCLUDE), making
+BUILD_DIR a garbage string of -I flags. This caused vm_check_file to fail
+with "unexpected operator" in sh's test builtin, VM_KBUILD stayed "no",
+and the standalone (non-kbuild) build system was used -- producing no .ko.
+
+Fix: compute BUILD_DIR directly from VM_UNAME, independent of LINUXINCLUDE.
+
+Applies to: vmmon-only/Makefile, vmnet-only/Makefile
+---
+--- a/vmmon-only/Makefile
++++ b/vmmon-only/Makefile
+@@ -52,7 +52,7 @@ else
+ HEADER_DIR = /lib/modules/$(VM_UNAME)/build/include
+ endif
+
+-BUILD_DIR = $(HEADER_DIR)/..
++BUILD_DIR = /lib/modules/$(VM_UNAME)/build
+
+ DRIVER := vmmon
+--- a/vmnet-only/Makefile
++++ b/vmnet-only/Makefile
+@@ -52,7 +52,7 @@ else
+ HEADER_DIR = /lib/modules/$(VM_UNAME)/build/include
+ endif
+
+-BUILD_DIR = $(HEADER_DIR)/..
++BUILD_DIR = /lib/modules/$(VM_UNAME)/build
+
+ DRIVER := vmnet

@@ -1,0 +1,37 @@
+From: VMware kernel 6.17 compatibility patches
+Subject: [PATCH 5/5] vmnet: fix UACCESS + csum_partial_copy_nocheck in userif.c
+
+In kernel 6.17, objtool rejects csum_partial_copy_nocheck() being called
+while UACCESS is already enabled (via user_access_begin()):
+
+  userif.o: error: objtool: VNetCsumAndCopyToUser+0x31: call to
+    csum_partial_copy_nocheck() with UACCESS enabled
+
+The existing code for kernel >= 5.19 opens a UACCESS region then calls
+csum_partial_copy_nocheck() directly. In kernel 6.17 this is rejected.
+
+Fix: compute the checksum over the kernel source buffer with csum_partial()
+(no UACCESS needed), then copy to userspace with copy_to_user() (which
+handles UACCESS internally). This is two passes over the data instead of
+one, but is correct and avoids the objtool error.
+
+Applies to: vmnet-only/userif.c
+---
+--- a/vmnet-only/userif.c
++++ b/vmnet-only/userif.c
+@@ -553,12 +553,11 @@ VNetCsumAndCopyToUser(const void *src,
+    csum = csum_and_copy_to_user(src, dst, len);
+    *err = (csum == 0) ? -EFAULT : 0;
+ #else
+-   if (!user_access_begin(dst, len)) {
++   csum = csum_partial(src, len, 0);
++   if (copy_to_user(dst, src, len)) {
+       *err = -EFAULT;
+       csum = 0;
+    } else {
+       *err = 0;
+-      csum = csum_partial_copy_nocheck(src, dst, len);
+-      user_access_end();
+    }
+ #endif
+    return csum;

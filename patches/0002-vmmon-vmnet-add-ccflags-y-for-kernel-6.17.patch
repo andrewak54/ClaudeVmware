@@ -1,0 +1,30 @@
+From: VMware kernel 6.17 compatibility patches
+Subject: [PATCH 2/5] vmmon,vmnet: add ccflags-y alongside EXTRA_CFLAGS
+
+In kernel 6.17, EXTRA_CFLAGS is no longer processed by the kbuild external
+module build system. The modern replacement is ccflags-y. Without this,
+vmmon's compiler invocations lack -I$(SRCROOT)/include, causing all source
+files (linux/driver.c, linux/hostif.c, common/*.c) to fail with:
+  fatal error: driver-config.h: No such file or directory
+
+Keep EXTRA_CFLAGS for compatibility with older kernels, and add ccflags-y
+for kernel 6.17+.
+
+Applies to: vmmon-only/Makefile.kernel, vmnet-only/Makefile.kernel
+---
+--- a/vmmon-only/Makefile.kernel
++++ b/vmmon-only/Makefile.kernel
+@@ -23,6 +23,7 @@ CC_OPTS += -DVMMON -DVMCORE
+ INCLUDE := -I$(SRCROOT)/include -I$(SRCROOT)/include/x86 -I$(SRCROOT)/common -I$(SRCROOT)/linux
+ EXTRA_CFLAGS := $(CC_OPTS) $(INCLUDE)
++ccflags-y := $(CC_OPTS) $(INCLUDE)
+
+ obj-m += $(DRIVER).o
+--- a/vmnet-only/Makefile.kernel
++++ b/vmnet-only/Makefile.kernel
+@@ -20,6 +20,8 @@ INCLUDE := -I$(SRCROOT)
+
+ EXTRA_CFLAGS := $(CC_OPTS) $(INCLUDE)
+ EXTRA_CFLAGS += $(call vm_check_build, $(SRCROOT)/netif_trans_update.c,-DVMW_NETIF_TRANS_UPDATE, )
++ccflags-y := $(CC_OPTS) $(INCLUDE)
++ccflags-y += $(call vm_check_build, $(SRCROOT)/netif_trans_update.c,-DVMW_NETIF_TRANS_UPDATE, )

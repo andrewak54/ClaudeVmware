@@ -1,0 +1,23 @@
+From: VMware kernel 6.17 compatibility patches
+Subject: [PATCH 3/5] vmmon: add compat defines for renamed kernel 6.x APIs
+
+Two functions were renamed in the kernel:
+  - del_timer_sync()  -> timer_delete_sync()  (kernel 6.15, commit 97db4fd)
+  - rdmsrl_safe()     -> rdmsrq_safe()        (kernel 6.x MSR API overhaul)
+
+Without this, linux/driver.c:349 and linux/hostif.c:3413 fail with
+"implicit declaration of function" errors.
+
+Applies to: vmmon-only/include/compat_version.h
+---
+--- a/vmmon-only/include/compat_version.h
++++ b/vmmon-only/include/compat_version.h
+@@ -last,4 +last,8 @@
+ #endif
+
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 15, 0)
++#define del_timer_sync timer_delete_sync
++#define rdmsrl_safe rdmsrq_safe
++#endif
++
+ #endif /* __COMPAT_VERSION_H__ */
